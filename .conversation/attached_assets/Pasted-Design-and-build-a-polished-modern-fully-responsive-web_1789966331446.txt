@@ -1,0 +1,249 @@
+Design and build a polished, modern, fully responsive website for a salon business.
+
+Business details:
+- Business name: Lavish Unisex Salon
+- Business category: Unisex salon
+- Phone: 07314007355
+- Address: UG-06, BCM City, Navlakha Square, near Reliance Fresh, Khandelwal Nagar, Janki Nagar, Indore, Madhya Pradesh 452001
+- Rating: 4.3/5 from 178 reviews
+
+Build this as a real working website, not just a static visual mockup.
+
+## Overall visual direction
+
+Create a premium, elegant, warm, and contemporary salon experience. The website should feel luxurious without being excessive, appealing to both men and women.
+
+Use this color palette:
+- Deep plum or dark aubergine for the main background
+- Warm ivory or soft cream for light sections
+- Champagne gold for accents, borders, buttons, and highlights
+- Muted blush pink or dusty rose as a secondary accent
+- Charcoal for readable body text
+
+Use sophisticated typography:
+- Headings: Cormorant Garamond, Playfair Display, or another elegant serif font
+- Body text and buttons: DM Sans, Manrope, or another clean modern sans-serif font
+
+The design should have:
+- Generous whitespace
+- Soft rounded corners
+- Thin gold borders
+- Subtle gradients
+- High-quality salon imagery
+- Strong visual hierarchy
+- A premium editorial feel
+- Excellent readability and accessibility
+
+Do not make the design look like a generic beauty salon template. Make it feel distinctive and branded for “Lavish Unisex Salon.”
+
+## Website structure
+
+Create a single-page website with these sections:
+
+### 1. Sticky navigation
+Include:
+- Elegant text-based logo or wordmark: “Lavish”
+- Navigation links: Home, About, Services, Gallery, Reviews, Contact
+- Primary CTA button: “Book an Appointment”
+- Mobile hamburger menu
+- Navigation should become slightly more compact or gain a subtle background when scrolling
+
+### 2. Hero section
+Create an impressive first screen with:
+- Headline such as: “Your Style. Your Glow. Your Lavish Moment.”
+- Supporting text explaining that Lavish Unisex Salon offers refined hair, beauty, and grooming services in Indore
+- Primary CTA: “Book an Appointment”
+- Secondary CTA: “Call 07314007355”
+- Rating badge showing “4.3/5 • 178 Reviews”
+- Premium salon image or image collage
+- Decorative gold linework or subtle abstract shapes
+- Smooth entrance animations when the page loads
+
+The hero must immediately communicate luxury, trust, and professional service.
+
+### 3. Trust and highlights section
+Show three or four compact highlights, such as:
+- Unisex Salon
+- Professional Styling
+- Premium Experience
+- Convenient Indore Location
+
+Use elegant icons with subtle hover effects.
+
+### 4. About section
+Introduce Lavish Unisex Salon with warm, confident copy focused on:
+- Personalized styling
+- Professional attention
+- Clean and relaxing atmosphere
+- Services for both men and women
+- Helping every client leave feeling confident
+
+Do not make unsupported claims such as “award-winning” or “number one.” Keep the copy believable and editable.
+
+Include a salon image and a small decorative statistic or quote block.
+
+### 5. Services section
+Create attractive service cards grouped into categories:
+- Hair
+- Skin and Beauty
+- Grooming
+- Nails and Care
+
+Use editable service names and descriptions. Do not invent prices unless clearly marked as placeholders. Include a note that customers can call for current pricing and availability.
+
+Example editable services:
+- Haircut and Styling
+- Hair Spa
+- Hair Color
+- Hair Treatments
+- Facials
+- Cleanup
+- Beard Grooming
+- Shaving
+- Manicure and Pedicure
+- Bridal or Occasion Styling
+
+Each card should have:
+- A refined icon or image
+- Service name
+- Short description
+- Hover animation
+- Optional “Enquire” link that scrolls to the booking/contact section
+
+### 6. Experience section
+Create a visually engaging section titled something like:
+“More Than a Salon Visit”
+
+Highlight:
+- Consultation before styling
+- Personalised recommendations
+- Comfortable environment
+- Careful attention to detail
+
+Use a split layout with imagery, animated numbers, or elegant editorial-style text.
+
+### 7. Gallery section
+Create a responsive image gallery featuring:
+- Hair styling
+- Salon interiors
+- Beauty treatments
+- Grooming
+- Before-and-after style imagery where appropriate
+
+Use a masonry-style or editorial grid layout. Add lightbox viewing if practical. Make sure all images have meaningful alt text.
+
+If final brand photography is not available, use tasteful royalty-free placeholder images and keep the image sources easy to replace in one central data file.
+
+### 8. Reviews section
+Display the verified business rating provided above:
+- 4.3 out of 5
+- 178 reviews
+
+Do not fabricate customer testimonials. Instead, create:
+- A rating summary card
+- A button labeled “Read Our Reviews”
+- A button linking to a Google Maps search for the business address
+
+If testimonial cards are included, clearly label them as editable sample content in the code so they can be replaced later.
+
+### 9. Location and contact section
+Show:
+- Phone number: 07314007355
+- Full address
+- “Get Directions” button
+- “Call Now” button
+- Opening-hours area with clearly editable placeholder hours
+- Embedded map only if it can be implemented without requiring a private API key; otherwise use a styled location card with a Google Maps link
+
+Make the phone number clickable on mobile using a tel link.
+
+### 10. Appointment section
+Create a polished appointment form with:
+- Name
+- Phone number
+- Preferred service
+- Preferred date
+- Preferred time
+- Message
+- Submit button
+
+Add client-side validation and a clear success state. Since no backend or booking system has been provided, do not pretend that appointments are actually being stored. For now, make the form clearly ready to connect to an email, database, WhatsApp, or booking service later.
+
+Also include a simpler fallback CTA:
+“Call us to check availability.”
+
+### 11. Footer
+Include:
+- Lavish Unisex Salon
+- Short brand statement
+- Phone number
+- Address
+- Navigation links
+- Social media placeholders that are easy to update
+- Copyright notice
+- Back-to-top button
+
+## Interactions and animation
+
+Use tasteful, premium animations:
+- Fade-up reveal animations on scroll
+- Smooth scrolling between sections
+- Gentle image zoom on hover
+- Button hover transitions
+- Subtle card lift effects
+- Animated gold accent lines
+- Soft hero image movement or parallax, but keep it lightweight
+- Mobile menu slide/fade animation
+- Appointment form success animation
+
+Animations should feel calm and refined, not flashy. Respect `prefers-reduced-motion` and disable or reduce animations for users who request less motion.
+
+## Technical requirements
+
+- Use a clean, maintainable React implementation with Tailwind CSS or an equally robust styling system.
+- Make the site fully responsive for mobile, tablet, and desktop.
+- Prioritize mobile usability because many salon customers will visit from their phones.
+- Use reusable components for navigation, buttons, service cards, gallery items, reviews, and forms.
+- Keep business content in a central editable data/config file wherever practical.
+- Use semantic HTML and accessible labels.
+- Ensure strong color contrast and keyboard accessibility.
+- Add SEO-friendly title, meta description, Open Graph metadata, and structured local-business data where appropriate.
+- Optimize images with lazy loading and responsive sizing.
+- Avoid unnecessary dependencies.
+- Ensure the website runs successfully in Replit without requiring private API keys.
+- Add a favicon or simple branded text favicon if no logo is available.
+- Include a clear README explaining where to edit the business details, services, images, social links, hours, and contact information.
+
+## Content tone
+
+Use copy that is:
+- Elegant
+- Welcoming
+- Confident
+- Concise
+- Professional
+- Inclusive for all genders
+
+Avoid:
+- Overly generic marketing clichés
+- Unsupported claims
+- Fake awards
+- Fake testimonials
+- Excessive animation
+- Cluttered layouts
+- Unclear pricing
+- Stock imagery that looks unrelated to a premium salon
+
+## Final quality check
+
+Before finishing:
+1. Test the layout on mobile, tablet, and desktop widths.
+2. Test every navigation link and CTA.
+3. Verify the phone links use 07314007355.
+4. Verify the address appears consistently.
+5. Verify the rating displays 4.3/5 from 178 reviews.
+6. Check the appointment form validation and success state.
+7. Check image alt text and keyboard navigation.
+8. Check for layout overflow, broken images, and console errors.
+9. Make sure all editable placeholder content is clearly marked in the code.
+10. Deliver a polished final website with a cohesive luxury salon aesthetic.

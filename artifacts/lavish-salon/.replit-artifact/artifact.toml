@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Lavish Unisex Salon"
+description = "A polished, responsive salon website for Lavish Unisex Salon in Indore, with services, gallery, reviews, contact details, and an appointment enquiry flow."
+version = "1.0.0"
+id = "artifacts/lavish-salon"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18908
+
+[services.development]
+run = "pnpm --filter @workspace/lavish-salon run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lavish-salon", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/lavish-salon/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18908"
+BASE_PATH = "/"

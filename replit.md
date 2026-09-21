@@ -1,6 +1,6 @@
-# [Project name]
+# Lavish Unisex Salon
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Lavish Unisex Salon is a responsive, editorial-style website for the Indore salon, with services, gallery, reviews, contact details, and an appointment enquiry flow.
 
 ## Run & Operate
 
@@ -22,23 +22,31 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/lavish-salon/src/App.tsx` — page composition and interactive behavior
+- `artifacts/lavish-salon/src/data.ts` — editable business details, services, gallery image URLs, and FAQs
+- `artifacts/lavish-salon/src/index.css` — typography, palette, texture, and reduced-motion rules
+- `artifacts/lavish-salon/index.html` — SEO title, description, Open Graph, and font loading
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The website is frontend-only because the appointment brief explicitly says not to pretend enquiries are stored without a booking backend.
+- Appointment enquiries validate in the browser and end in a clear “ready to connect” success state, with the phone fallback remaining immediately available.
+- Business content and replaceable remote imagery live in `src/data.ts` so the owner can update facts without searching through layout markup.
+- The page uses accessible native controls for the menu, gallery lightbox, FAQ accordion, and form fields, with reduced-motion support in the stylesheet.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Visitors can learn about Lavish, browse service categories and gallery images, view the verified 4.3/5 rating from 178 reviews, open Google Maps directions, call the salon, and submit a client-side appointment enquiry.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- The brand should feel premium, warm, inclusive, and distinctive rather than like a generic salon template.
+- Do not invent testimonials, awards, pricing, opening hours, or business history.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- The managed frontend workflow provides `PORT` and `BASE_PATH`; use the workflow or preview for runtime checks rather than running the Vite build command without those variables.
+- Remote gallery images are intentionally centralized and should be replaced with final brand photography when available.
 
 ## Pointers
 
